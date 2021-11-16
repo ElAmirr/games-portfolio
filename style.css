@@ -56,13 +56,15 @@ a {
     right: 70%;
 }
 
-.first-page {
+.first-page,
+.second-page {
     height: 100vh;
     background: rgb(21, 21, 21);
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 40px;
 }
 
 .contact-page {
@@ -75,6 +77,37 @@ a {
 
 .main {
     height: 100vh;
+    padding-top: 5vh;
+    margin-left: 8vw;
+}
+
+label {
+    color: rgb(177, 177, 177);
+    margin-left: 2vw;
+}
+
+.submit {
+    background-color: rgb(180, 180, 10);
+    color: white;
+    font-weight: 500;
+    width: 20%;
+    margin-top: 10vh;
+    border: none;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 2vh;
+    border: rgb(21, 21, 21);
+    border-bottom: 2px solid rgb(180, 180, 10);
+    outline: none;
+    background: rgb(21, 21, 21);
+    color: rgb(177, 177, 177);
+    font-size: 1.3vw;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+    cursor: pointer;
 }
 
 .social-media {
@@ -85,18 +118,26 @@ a {
 
 .box {
     height: 30rem;
-    width: 25rem;
+    width: 35rem;
     background: white;
     color: black;
     position: absolute;
-    top: 315%;
-    left: 65%;
+    top: 310%;
+    right: 0%;
     z-index: 2;
 }
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
 .home {
     height: 100vh;
 }
 
-.first-page img {
+.first-page img,
+.second-page img {
     height: 100%;
 }
