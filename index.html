@@ -9,7 +9,8 @@
     <link rel="icon" href="controller.png" type="image/icon type">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
@@ -18,12 +19,15 @@
         <section class="home">
             <nav>
                 <h1 class="sliding-text">One step closer <br>to know Miro</br></h1>
-                <ul>
+                <ul class="mylinks">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Me</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </nav>
             <h1 class="logo">Game Zone</h1>
         </section>
@@ -35,8 +39,12 @@
             <img src="pexels-elīna-arāja-3400795.jpg" alt="">
         </section>
         <section class="second-page">
+            <div class="intro-small">
+                <h2>Maze Game</h2>
+                <p>sdvsd sfdfsd fsdf sdg fsgg hhgfhj fhfgj hj hgfhfg hd fsdf sdg jf hdv xcv xdgsgsdgs wd fsdgs gs dgdsds </p>
+            </div>
             <img src="pexels-monstera-7352866.jpg" alt="">
-            <div class="intro">
+            <div class="intro-large">
                 <h2>Maze Game</h2>
                 <p>sdvsd sfdfsd fsdf sdg fsgg hhgfhj fhfgj hj hgfhfg hd fsdf sdg jf hdv xcv xdgsgsdgs wd fsdgs gs dgdsds </p>
             </div>
@@ -45,15 +53,18 @@
             <div class="main">
                 <h2>Contact Us</h2>
                 <p>Simple text. Click to select the text box. Click again or ouble click to start editing the text</p>
-                <div class="info">
+                <form action="https://formsubmit.co/othmaniamir41@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/thanks.html">
+                    <input type="hidden" name="_subject" value="New submission!">
                     <label for="fname">Enter your Name</label>
-                    <input type="text" >
+                    <input type="text" name="name" required>
                     <label for="email">Enter a valid email address</label>
-                    <input type="email" id="email" name="email"> 
+                    <input type="email" id="email" name="email" required> 
                     <label for="lname">Enter your message</label>
-                    <input type="text">
-                    <input type="submit" value="Submit" class="submit">
-                </div>
+                    <textarea name="message"></textarea>
+                    <input type="submit" value="Submit" id="submit" >
+                </form>
+                <img id="send" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAABb0lEQVQ4jaWSu0oDURCGvzmRqLugWIhgY2slWIvghRQej8YL2NkJNj6AgoWd2FnZWdgKXgJummBn4xvYWWgjIiKaoxvYHRuVTTBepxk48883/wwH/hny24b9fdrDMBgXMefWPt22/KSpUunqrNVqk6o6C0yoEkI6BZw0BZRKYU8up0VgNo7jMSAPKOCBarXqTwHqAFHU1pemMiMiDnSkvq6PIIfAIsjBwgLPH4ByORhMEnZVGZRPr6IXqrImwh5gRDh+r5i3dC1C2mwbYyiI6CbQAdTy+XxUB7D26dYYPwTsZseCbnnv55NEtkH6AVQ5LRTuHxocgLXEzvklYBm4U2XOuefVMAzWRZjPgI+y9j7duFym1VriKAqcKqXMoDRJpLdYrN58CXiHpGlwBXRnns+c88NZnaFJWEsMbNTZFT1s1DUFADjnd8gcNkn0uFHz7VcOQ7/ifTCgSm56+uXyVw4ARkd5ETGTxrD0nfZP8QqkVICLh+k7WQAAAABJRU5ErkJggg==">
             </div>
             <div class="social-media">
                 <div class="ul">
