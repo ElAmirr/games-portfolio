@@ -49,7 +49,7 @@ let tl6 = gsap.timeline({
     scrollTrigger: {
         trigger: '.second-page',
         start: '86%',
-        end: '86%',
+        end: '100%',
         scrub: 1,
     },
 });
@@ -58,7 +58,7 @@ let tl7 = gsap.timeline({
     scrollTrigger: {
         trigger: '.second-page',
         start: '86%',
-        end: '86%',
+        end: '100%',
         scrub: 1,
     },
 });
