@@ -66,6 +66,27 @@ a {
     justify-content: space-between;
 }
 
+.button {
+    background-color: rgb(21, 21, 21); 
+    color: white;
+    border: 2px solid rgb(180, 180, 10);
+    border-radius: 5%;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+.button:hover {
+    background-color: rgb(180, 180, 10);
+    color: white;
+    cursor: pointer;
+}
+
 .contact-page {
     height: 100vh;
     background: rgb(21, 21, 21);
@@ -181,6 +202,8 @@ form {
 .second-page img {
     height: 100%;
 }
+
+
 
 .icon {
     display: none;
